@@ -1,0 +1,52 @@
+/* ปิด spinner ทุกประเภททันที */
+.adsk-viewing-loading-indicator,
+.adsk-viewing-loading-indicator .adsk-spinner,
+.adsk-viewing-spinner,
+.viewer-loading-spinner,
+.adsk-spinner,
+.adsk-viewing-loading-spinner {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+/* ซ่อนทุกอย่างที่เกี่ยวกับ Autodesk loading splash screen */
+div[id*="loadingScreen"], 
+div[class*="loading-screen"], 
+div[class*="viewing-loading"], 
+div[class*="adsk-viewing-loading"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+/* Autodesk Splash screen ที่เป็น background loading */
+div[data-viewer-loading] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+  
+  /* ปิดตัว animation สีฟ้าๆ กับ Powered by Autodesk */
+  div[class*="adsk-viewing-loading"],
+  div[class*="adsk-spinner"],
+  div[class*="adsk-viewing-overlay"],
+  div[class*="viewing-loading"],
+  div[class*="loading-screen"],
+  div[class*="autodesk-logo"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+  /* ซ่อน loading screen (ใช้ร่วมกับ JS ข้างบน) */
+[class*="viewing-loading"],
+[class*="adsk-spinner"],
+[class*="autodesk-logo"],
+[class*="loading-screen"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

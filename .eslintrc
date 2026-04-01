@@ -1,0 +1,5 @@
+{
+    "globals": {
+        "Autodesk": "readonly"
+    }
+}

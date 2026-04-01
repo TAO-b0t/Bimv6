@@ -1,0 +1,23 @@
+.role-owner {
+    color: rgba(132, 178, 233, 1);
+    border-color: rgba(132, 178, 233, 1);
+    background: rgba(32, 99, 180, 0.12);
+}
+
+.role-manager {
+    color: rgba(139, 99, 189, 1);
+    border-color: rgba(139, 99, 189, 1);
+    background: rgba(139, 99, 189, 0.12);
+}
+
+.role-officer {
+    color: rgba(233, 118, 82, 1);
+    border-color: rgba(233, 118, 82, 1);
+    background: rgba(233, 118, 82, 0.12);
+}
+
+.role-guest {
+    color: rgba(95, 169, 94, 1);
+    border-color: rgba(95, 169, 94, 1);
+    background: rgba(95, 169, 94, 0.12);
+}
