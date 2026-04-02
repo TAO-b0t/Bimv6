@@ -12,7 +12,7 @@ export default function MapPage() {
   const [projects, setProjects] = useState([]); 
 
   useEffect(() => {
-    dispatch(setTitle("แผนที่โครงการ"));
+    dispatch(setTitle("แผนที่"));
   }, [dispatch]);
 
   useEffect(() => {
@@ -30,13 +30,11 @@ export default function MapPage() {
 
   return (
     <LayoutTemplateElec>
-      <div className="flex overflow-hidden bg-[#011619]">
+      <div className="flex overflow-hidden bg-white">
 
         <div className="flex-1 h-[93.8vh] p-6 flex flex-col gap-4 overflow-hidden">
           
           <div className="flex flex-col gap-2">
-            <h1 className="text-white text-2xl font-light">แผนที่</h1>
-            
             <div className="bg-[#0b1212] border border-gray-800 p-4 rounded-sm flex items-start gap-2 text-[13px]">
               <span className="text-[#f1a533] font-bold shrink-0">BIM DATA BASE</span>
               <p className="text-gray-300 leading-relaxed">
