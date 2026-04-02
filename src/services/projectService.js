@@ -1,7 +1,7 @@
 import axios from "axios";
 import authService from "./authService";
 // https://bimdatabase-d222f5398e1d.herokuapp.com
-const API_BASE_URL = "https://explanatively-handed-jaylin.ngrok-free.dev/api"; // ปรับตามจริง
+const API_BASE_URL = "https://bimv6-api.ngrok.dev/api"; // ปรับตามจริง
 // const API_BASE_URL = "https://bimdatabase-d222f5398e1d.herokuapp.com/api"; // ปรับตามจริง
 
 const projectService = {

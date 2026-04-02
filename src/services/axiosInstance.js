@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // const API_BASE_URL = "http://localhost:3000/api";
-const API_BASE_URL = "https://explanatively-handed-jaylin.ngrok-free.dev/api"; // ปรับตามจริง
+const API_BASE_URL = "https://bimv6-api.ngrok.dev/api"; // ปรับตามจริง
 
 const instance = axios.create({
   baseURL: API_BASE_URL,
