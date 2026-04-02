@@ -3,15 +3,16 @@ import ExpandableSection from "../common/ExpandableItem";
 import SideBarToggleButton from "../common/SideBarToggleButton";
 
 import {
-  LayoutDashboard,
+  Home,
   FileText,
   Map,
   Wrench,
   History,
   ClipboardList,
   Calendar,
-  HardHat,//asdasdsad
+  HardHat,
   FileSearch,
+  Folders,
 } from "lucide-react";
 
 import ProjectSection from "./ProjectSection";
@@ -44,7 +45,7 @@ export default function SidePane() {
     <div className="h-full row-start-2 row-end-3 overflow-y-auto overflow-x-hidden flex flex-col gap-2.5 p-5">
       <SideBarToggleButton
         title={"หน้าแรก"}
-        icon={<LayoutDashboard size={20} />}
+        icon={<Home size={20} />}
         active={location.pathname === "/workbench"}
         onClick={() => navigate("/workbench")}
       />
@@ -63,7 +64,7 @@ export default function SidePane() {
         />
         <SideBarToggleButton
           title={"พื้นที่จัดเก็บเอกสาร"}
-          icon={<FileText size={18} />}
+          icon={<Folders size={18} />}
           isChild={true}
         />
         <SideBarToggleButton
@@ -82,7 +83,6 @@ export default function SidePane() {
       <SideBarToggleButton
         title={"แผนที่"}
         icon={<Map size={20} />}
-        isChild={true}
         active={location.pathname === "/map"}
         onClick={() => navigate("/map")}
       />

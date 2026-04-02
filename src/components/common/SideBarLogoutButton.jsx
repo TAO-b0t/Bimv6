@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function SideBarToggleButton({
+export default function SideBarLogoutButton({
   title,
   icon,
   isChild,
@@ -22,14 +22,14 @@ export default function SideBarToggleButton({
       onClick={onClick}
       className={`
             flex items-center gap-3 w-full py-2 px-4 rounded-lg transition group
-            ${active ? "bg-blue-900 text-white" : "text-blue-900 hover:bg-blue-900 hover:text-white"}
+            ${active ? "bg-red-500 text-white" : "text-red-500 hover:bg-red-500 hover:text-white"}
             ${isChild ? "pl-8" : ""}
           `}
     >
       <div
         className={`
           shrink-0 transition-colors
-          ${active ? "bg-blue-900 text-white" : "text-blue-900 group-hover:bg-blue-900 group-hover:text-white"}
+          ${active ? "bg-red-500 text-white" : "text-red-500 group-hover:bg-red-500 group-hover:text-white"}
         `}
       >
         {icon}
