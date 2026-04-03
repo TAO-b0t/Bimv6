@@ -39,7 +39,7 @@ export default function MapPage() {
 
   const [mapPosition, setMapPosition] = useState(null);
 
-  // mock พิกัดไปกอนเพราะใน api ไม่มี lat lng หรือผมอาจหาไม่เจอ
+  // mock พิกัดไปกอนเพราะใน api
   const getMockCoords = (id) => {
     const mocks = {
       1: { lat: 18.796145, lng: 98.953805 },
